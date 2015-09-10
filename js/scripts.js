@@ -1,4 +1,25 @@
+var toTenBase = {
 
+  fromBinary: function(number){
+    var input_array = String(+number).split("")
+    var power_array = [];
+    var result = 0;
+
+    do{
+      var i = 0;
+      power_array.push(Math.pow(2, i));
+      i++;
+    } while( power_array.length <= input_array.length );
+
+    // do{
+    //   var i = 0;
+    //   result = result + (input_array[i] * power_array[i]);
+    //   i++;
+    // } while( i <= input_array.length );
+    // return result;
+  }
+
+};
 
 
 var toBase = {

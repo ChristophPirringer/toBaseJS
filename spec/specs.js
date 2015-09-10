@@ -12,9 +12,6 @@ describe('toBase', function() {
    expect(toBase.nonary(156)).to.equal(183);
   });
 
-
-
-
   it("transforms 156 to its binary value given 2 as a base", function() {
    expect(toBase.omniary(156, 2)).to.equal(10011100);
   });
@@ -31,4 +28,11 @@ describe('toBase', function() {
    expect(toBase.omniary(156, 7)).to.equal(312);
   });
 
+});
+
+describe('toTenBase', function() {
+
+  it("transforms a number to its 10-base value from its binary base", function() {
+   expect(toTenBase.fromBinary(10011100)).to.equal(156);
+  });
 });
